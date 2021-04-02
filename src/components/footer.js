@@ -3,8 +3,9 @@ import React from 'react'
 
 export default class Footer extends React.Component {
 	render(){
+		const {length, doned}=this.props;
 		return (
-			<h1 id='footer'>Footer</h1>
+			<div id='footer'>из {length} выполнено {doned}</div>
 			)
 	}
 }

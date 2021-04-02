@@ -4,13 +4,14 @@ import TodoItem from './todoitem'
 
 export default class Todo extends React.Component {
 	render(){
-		const {db} = this.props;
+		const {db, onLabelClick} = this.props;
 		const elements = db.map(todo => {
 			return (
 				<TodoItem 
 				key={todo.id} 
 				label={todo.title}
 				{...todo}
+				onLabelClick = {() => onLabelClick(todo.id)}
 				/>
 			)
 		})
