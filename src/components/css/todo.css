@@ -1,4 +1,23 @@
 #todo {
-	background-color: #cfcfcf;
-	color: #fedf22;
+	background-color: #eee;
+	display: block;
+	color: #202020;
+	width: 320px;
+}
+li.todo-item {
+	list-style: none;
+
+}
+li.todo-item:hover {
+	background-color: #ffffff;
+}
+.todo-item {
+	font-size: 14px;
+	padding: 5px;
+}
+.important {
+	color:#a56c04;
+}
+.done {
+    text-decoration: line-through;
 }
